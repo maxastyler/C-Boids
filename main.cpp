@@ -25,7 +25,7 @@ int main(int argc, char* args[])
     bool running = true;
 
     BoidManager manager(60, SDL_Rect{0, 0, SCREEN_WIDTH, SCREEN_HEIGHT});
-    Clock clock{};
+    Clock clock = Clock();
     int dt;
 
     Vec2 pull(0, 0);
